@@ -46,7 +46,7 @@ class Board:
         if piece != 0:
           piece.draw(win)
 
-  # prints the board to the consule.
+  # prints the board to the console.
   def print(self):
     for row in range(ROWS):
       for column in range(COLS):
