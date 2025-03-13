@@ -3,12 +3,12 @@ import random as r
 import pygame
 from constants import WIDTH, HEIGHT, RED, WHITE, SQUARE_SIZE
 from game import Game
-from algorithm import minimax
+from algorithm import Algorithm
 
 
 
 FPS = 60
-DEPTH = 5
+DEPTH = 3
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('Connect 4')
 
@@ -23,13 +23,11 @@ def main():
     game = Game(WIN)
 
     while run:
-
         clock.tick(FPS)
         # uncomment this if statement if you want to test your scoring algorithm without an AI.
         if game.turn == WHITE:
-          value, new_board = minimax(game.get_board(), DEPTH, True)
+          value, new_board = Algorithm.minimax(game.get_board(), DEPTH, True)
           game.ai_move(new_board)
-
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
