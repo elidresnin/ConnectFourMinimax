@@ -40,6 +40,7 @@ def main():
 
         game.update()
 
+
     pygame.quit()
 
 
