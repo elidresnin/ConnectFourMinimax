@@ -8,7 +8,7 @@ from algorithm import Algorithm
 
 
 FPS = 60
-DEPTH = 3
+DEPTH = 5
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('Connect 4')
 

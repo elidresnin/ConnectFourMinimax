@@ -64,9 +64,9 @@ class Eli:
         if vert_count == 0:
             score += 1
         elif vert_count == 1:
-            score += 2
+            score += 5
         elif vert_count == 2:
-            score += 3
+            score += 10
 
         # horizontal combos
         hori_count = 0
@@ -80,9 +80,9 @@ class Eli:
         if hori_count == 0:
             score += 1
         elif hori_count == 1:
-            score += 2
+            score += 5
         elif hori_count == 2:
-            score += 3
+            score += 10
 
     # diagonal combos
         diag_count = 0
@@ -98,9 +98,9 @@ class Eli:
         if diag_count == 0:
             diag_score += 1
         elif diag_count == 1:
-            diag_score += 2
+            diag_score += 5
         elif diag_count == 2:
-            diag_score += 3
+            diag_score += 10
 
         diag_count = 0
 
@@ -118,9 +118,9 @@ class Eli:
         if diag_count == 0:
             diag_score += 1
         elif diag_count == 1:
-            diag_score += 2
+            diag_score += 5
         elif diag_count == 2:
-            diag_score += 3
+            diag_score += 10
 
         score += diag_score
 
